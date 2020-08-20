@@ -261,3 +261,119 @@ body  {
 	left: 138px;
 	transform: rotate(-40deg);
 }
+
+
+
+.head:hover .flash {
+	background-color: red;
+	transition: 3s;
+}
+
+.head:hover .eyebrow.-left {
+	transition: 3s;
+	transform: translate(15px, 10px);
+}
+
+.head:hover .eyebrow.-right {
+	transition: 3s;
+	transform: translate(-15px, 10px);
+}
+
+.head:hover .eye.-left {
+	transition: 3s;
+	transform: translateX(10px);
+}
+
+.head:hover .eye.-right {
+	transition: 3s;
+	transform: translateX(-10px);
+}
+
+.head:hover .mouth:before{
+	display: none;
+}
+
+.head:hover .mouth {
+	border-radius: 40%;
+	transition: 3s;
+}
+
+.bone.-first {
+	position: absolute;
+	height: 10px;
+	width: 100px;
+	background-color: var(--c-black);
+}
+
+.bone.-second {
+	position: absolute;
+	height: 10px;
+	width: 200px;
+	background-color: var(--c-black);
+}
+
+.bone.-third {
+	position: absolute;
+	height: 10px;
+	width: 250px;
+	background-color: var(--c-black);
+}
+
+.wing.-left .bone.-first {
+	right: 0;
+	bottom: 0;
+}
+
+.wing.-left .bone.-second {
+	bottom: 0;
+	right: 0;
+	transform: rotate(-120deg) translate(-55px, 90px);
+	transform-origin: 0% 50%;
+}
+
+.wing.-left .bone.-third {
+	bottom: 170px;
+	left: 0px;
+}
+
+.wing.-right .bone.-first {
+	right: 0;
+	bottom: 0;
+}
+
+.wing.-right .bone.-second {
+	bottom: 0;
+	right: 0;
+	transform: rotate(-120deg) translate(-55px, 90px);
+	transform-origin: 0% 50%;
+}
+
+.wing.-right .bone.-third {
+	bottom: 170px;
+	left: 0px;
+}
+
+.wing {
+	width: 440px;
+	height: 180px;
+}
+
+.wing.-left {
+	transform: scale(1) translate(-400px, 400px);
+	transform-origin: right bottom;
+}
+
+.wing.-right {
+	transform: scale(-1, 1) translate(-300px, 220px);
+	transform-origin: right top;
+}
+
+.head:hover .wing.-left {
+	transform: rotate(10deg);
+	transition: 3s;
+}
+
+.head:hover .wing.-right {
+	transform: rotate(-10deg);
+	transition: 3s;
+}
